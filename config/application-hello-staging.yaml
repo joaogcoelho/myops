@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/joaogcoelho/myops.git
-    targetRevision: HEAD
+    targetRevision: v*
     path: staging/hello
   destination:
     server: https://kubernetes.default.svc
