@@ -16,6 +16,7 @@ spec:
       containers:
         - name: api-gestor-versao
           image: vrsoftbr/gestorversao-api:k
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
             - containerPort: 6276
