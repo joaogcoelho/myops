@@ -11,7 +11,7 @@ spec:
     path: staging/api-gestor-versao
   destination:
     server: https://kubernetes.default.svc
-    namespace: staging
+    namespace: gestor-versao
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
