@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cfg-api-gestor-versao
+  namespace: gestor-versao
+data:
+  NODE_ENV: "production"
+  API_PORT: "3000"
+  WEB_SOCKET_PORT: "6276"
+  POSTGRES_HOST: "192.168.1.223"
+  POSTGRES_PORT: "5432"
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "postgres"
+  POSTGRES_DB_NAME: "gestorversao"
+  REDIS_HOST: "192.168.1.223"
+  REDIS_PORT: "6379"
+  REDIS_PASSWORD: "vr@Redis1!"
+  RABBITMQ_HOST: "192.168.1.223"
+  RABBITMQ_PORT: "5672"
+  RABBITMQ_USERNAME: "vr"
+  RABBITMQ_PASSWORD: "vr!RbtMQ"
+  TOKEN_VERSAO_TAREFA: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  SECRET_KEY: "zW^f3c2@G9#rLPu8bX!mD0Ve$Yk7jQ%aZTpn1h^R46&UEiMxoA#sqNlCBgtF*yWd"
+  MAIL_HOST: "smtp.gmail.com"
+  MAIL_USER: "noreply@vrsoft.com.br"
+  MAIL_PASSWORD: ""
+  MAIL_DEBUG: "false"

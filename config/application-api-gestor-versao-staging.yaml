@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-ingress
+  name: api-gestor-versao
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/joaogcoelho/myops.git
     targetRevision: HEAD
-    path: ingress
+    path: staging/api-gestor-versao
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: staging
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-api-gestor-versao
+  namespace: gestor-versao
+spec:
+  selector:
+    app: api-gestor-versao
+  ports:
+    - port: 3000
+      targetPort: 3000
+    - port: 6276
+      targetPort: 6276

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-api-gestor-versao
+  namespace: gestor-versao
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-gestor-versao
+  template:
+    metadata:
+      labels:
+        app: api-gestor-versao
+    spec:
+      containers:
+        - name: api-gestor-versao
+          image: vrsoftbr/gestorversao-api:k
+          ports:
+            - containerPort: 3000
+            - containerPort: 6276
+            - containerPort: 7001
