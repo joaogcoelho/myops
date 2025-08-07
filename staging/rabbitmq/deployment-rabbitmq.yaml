@@ -21,7 +21,7 @@ spec:
             - containerPort: 15672 # Management UI port
           env:
             - name: RABBITMQ_DEFAULT_USER
-              value: "admin"
+              value: "vr"
             - name: RABBITMQ_DEFAULT_PASS
               value: "vr@Rabbit1!"
 ---
