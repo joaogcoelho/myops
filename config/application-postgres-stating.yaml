@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://github.com/seu-repositorio.git"
+    repoURL: https://github.com/joaogcoelho/myops.git
     targetRevision: HEAD
-    path: myops/staging/postgres
+    path: staging/postgres
   destination:
     server: "https://kubernetes.default.svc"
     namespace: gestor-versao
