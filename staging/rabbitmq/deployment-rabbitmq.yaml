@@ -23,7 +23,7 @@ spec:
             - name: RABBITMQ_DEFAULT_USER
               value: "vr"
             - name: RABBITMQ_DEFAULT_PASS
-              value: "vr@Rabbit1!"
+              value: "vr!RbtMQ"
 ---
 apiVersion: v1
 kind: Service
