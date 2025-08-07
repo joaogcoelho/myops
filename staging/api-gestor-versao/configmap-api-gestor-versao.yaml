@@ -7,7 +7,7 @@ data:
   NODE_ENV: "production"
   API_PORT: "3000"
   WEB_SOCKET_PORT: "6276"
-  POSTGRES_HOST: "192.168.1.223"
+  POSTGRES_HOST: "postgres-service"
   POSTGRES_PORT: "5432"
   POSTGRES_USER: "postgres"
   POSTGRES_PASSWORD: "postgres"
