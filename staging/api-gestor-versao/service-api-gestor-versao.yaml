@@ -4,6 +4,7 @@ metadata:
   name: svc-api-gestor-versao
   namespace: gestor-versao
 spec:
+  type: NodePort
   selector:
     app: api-gestor-versao
   ports:
