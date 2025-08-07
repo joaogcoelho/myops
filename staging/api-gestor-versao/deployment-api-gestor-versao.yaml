@@ -16,7 +16,10 @@ spec:
       containers:
         - name: api-gestor-versao
           image: vrsoftbr/gestorversao-api:k
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: cfg-api-gestor-versao
           ports:
             - containerPort: 3000
             - containerPort: 6276
